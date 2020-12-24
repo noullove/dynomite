@@ -1,0 +1,12 @@
+dyn_o_mite:
+  datacenter: SERVER_NAME
+  rack: rack1
+  dyn_listen: SERVER_IP:7379
+  dyn_seeds:
+  - SEED_IP:7379:rack1:SEED_NAME:0
+  listen: 0.0.0.0:8379
+  servers:
+  - /var/run/redis.sock:1
+  tokens: '0'
+  data_store: 0
+  stats_listen: 127.0.0.1:22222
